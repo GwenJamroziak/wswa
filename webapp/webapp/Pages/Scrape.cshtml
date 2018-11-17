@@ -1,0 +1,23 @@
+﻿@page
+@model webapp.Pages.ScrapeModel
+@{
+    ViewData["Title"] = "Scrape";
+}
+
+<h2>Scrape</h2>
+name from vendorid
+
+<form>
+    <input placeholder="vul vendorId in" id="vendorId" />
+    <button>submit</button>
+</form>
+
+@Model.CallVendorNameFromService(1263725)
+@Model.QuickScanFromService(1263725)
+
+<!--
+    
+// 913438 // 450128 articles
+// 1263725 // adelbrecht
+// 1111179 /// twondo
+-->
